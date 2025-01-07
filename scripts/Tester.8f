@@ -1,0 +1,48 @@
+(Aritmetiske operasjoner)
+
+~Aritmetiske operasjoner~ .print .newline
+
+~10 + 5=~ 10 5 .+ .print .newline
+~20 - 8=~ 20 8 .- .print .newline
+~4 * 5=~ 4 5   .* .print .newline
+~-5 * 5=~ -5 5 .* .print .newline
+~ 3 + -10=~ 3 -10 .+ .print .newline
+~ 10 % 8 =~ 10 8 .mod .print .newline
+~ 50 / 25=~ 50 25 ./ .print .newline
+.newline
+
+
+
+(Equal og greater)
+
+~Equal og greater~ .print .newline
+~Er 5 og 5 lik?~ 5 5 .=? .print .newline
+~Er 5 og 6 lik?~ 5 6 .=? .print .newline
+~Er -10 og 10 lik?~ -10 10 .=? .print .newline
+~Er 10 større enn 6?~ 10 6 .>? .print .newline
+~Er 3 større enn 0?~ 3 0 .>? .print .newline
+.newline
+
+(Tester dup og swap)
+
+~Tester dup og swap~ .print .newline
+~Hvis 5 er på toppen av stacken, dupliser og gang med 5~ 5 .dup .* .print .newline
+~Bytter plasser på de to øverste elementene i stacken 4 og 3=~ 3 4 .swap .print .newline
+.newline
+
+(Blander tall og strenger)
+~Blanding av streng og tall~ .print .newline
+~ ~tekst~ + 5 = ~tekst~ 5 .+ .print .newline
+.newline
+
+(Tester cjump)
+
+~tester cjump~ .print .newline
+
+1                           
+  .dup .print .newline       
+  1 .+                      
+  .dup  21 .swap .>?       
+-10 .cjump                  
+~end of loop here~ .print .newline
+.newline
